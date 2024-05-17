@@ -110,7 +110,7 @@
         <section class="grid lg:grid-cols-2 xl:grid-cols-4 p-2 gap-5">
             <!-- card-1 -->
             <div class="card w-auto lg:w-96 shadow-xl">
-                <figure class="px-10 pt-10">
+                <figure class="px-2 pt-2">
                   <img src="images/img-6.png" alt="Shoes" class="rounded-xl" />
                 </figure>
                 <div class="card-body items-center text-center">
@@ -126,7 +126,7 @@
                 </div>    
                   <!-- Open the modal using ID.showModal() method -->
                     <button class="btn" onclick="my_modal_1.showModal()">Details</button>
-                    <dialog id="my_modal_1" class="modal">
+                  <dialog id="my_modal_1" class="modal">
                         <div class="modal-box">
                             <div class="card card-compact w-96 ">
                                 <figure><img src="images/img-6.png" alt="Shoes" /></figure>
@@ -148,14 +148,12 @@
                             <div class="modal-action">
                                 <form method="dialog  ">
                                     <!-- if there is a button in form, it will close the modal -->
-                                    <div class="w-auto mx-auto card-actions justify-center">
-                                        <button class="btn ">Close</button>
-                                        <button class="btn btn-primary">Buy Now</button>
-                                      </div>
+                                    <button class="btn">Close</button>
+                                    <button class="btn btn-primary">Buy Now</button>
                                 </form>
                             </div>
                         </div>
-                    </dialog>
+                  </dialog>
             </div>
             <!-- card-2 -->
             <div class="card  w-auto lg:w-96 shadow-xl">
@@ -304,7 +302,10 @@
                         </div>
                     </dialog>
             </div>
+            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg ">Responsive</button>
+
         </section>
+        
     </main>
     <footer class="container mx-auto">
 
